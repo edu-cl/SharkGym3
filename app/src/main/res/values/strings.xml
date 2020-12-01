@@ -21,5 +21,14 @@
     <string name="venir_diariamente">Venir diariamente</string>
     <string name="todo">TODO</string>
     <string name="_10_resultados">10 Resultados</string>
+    <string name="Ordenar">Ordenar</string>
+    <string name="Configuración">Configuración</string>
+    <string name="Sobre_nosotros">Sobre_Nosotros</string>
+    <string name="Buscador">Buscador</string>
+    <string name="Creador">Aplicación desarrollada por Eduardo Carmona López</string>
+    <string name="Contacto">Mi correo de
+        contacto es: aedcarmona@iesfranciscodelosrios.es</string>
+    <string name="title_activity_about_me">AboutMe</string>
+    <string name="acerca_de">Acerca de</string>
 
 </resources>

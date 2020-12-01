@@ -3,8 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.sharkgym3.views.MainActivity">
     <item
+        android:id="@+id/Buscador"
+        android:icon="?android:attr/actionModeWebSearchDrawable"
+        android:orderInCategory="100"
+        android:title="@string/Buscador"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ordenar"
+        android:orderInCategory="100"
+        android:title="@string/Ordenar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Sobre_Nosotros"
+        android:orderInCategory="100"
+        android:title="@string/acerca_de"
+        app:showAsAction="never" />
+
+
+
 </menu>

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SharkGym3">
-        <activity android:name=".views.FormActivity"></activity>
+        <activity android:name=".views.SearchActivity"></activity>
+        <activity
+            android:name=".views.AboutMe"
+            android:label="@string/title_activity_about_me"
+            android:theme="@style/Theme.SharkGym3.NoActionBar" />
+        <activity android:name=".views.FormActivity" />
         <activity
             android:name=".views.SplartActivity"
             android:screenOrientation="portrait">

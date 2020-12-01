@@ -43,12 +43,6 @@ public class MainActivity extends AppCompatActivity implements MainInterface.Vie
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -57,20 +51,33 @@ public class MainActivity extends AppCompatActivity implements MainInterface.Vie
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        
-        if (id == R.id.action_settings) {
-            Log.d(TAG, "On click en el menu ");
-            return true;
+        //if(id == R.id.action_search_list){
+            //presenter.onClickSearchToolbar();
+            //Aqui iria el presentador intenta hacerlo si quieres hacerlo de forma normal con esto
+            //Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
+            //startActivity(intent);
+      // }
+
+        if(id == R.id.Sobre_Nosotros){
+            //presenter.onClickAboutToolbar();
+            //Aqui iria el presentador intenta hacerlo si quieres hacerlo de forma normal con esto
+            Intent intent = new Intent(getApplicationContext(), AboutMe.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
     public void startFormActivity() {
         Intent intent = new Intent(getApplicationContext(), FormActivity.class);
         startActivity(intent);
-
     }
 }
