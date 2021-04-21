@@ -19,7 +19,7 @@
     <string name="nombre">Nombre</string>
     <string name="genero">Genero</string>
     <string name="venir_diariamente">Venir diariamente</string>
-    <string name="todo">TODO</string>
+
     <string name="_10_resultados">10 Resultados</string>
     <string name="Ordenar">Ordenar</string>
     <string name="Configuración">Configuración</string>
@@ -30,5 +30,22 @@
         contacto es: aedcarmona@iesfranciscodelosrios.es</string>
     <string name="title_activity_about_me">AboutMe</string>
     <string name="acerca_de">Acerca de</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Add">add</string>
+    <string name="Titulo">Nueva Categoria</string>
+    <string name="Descripcion">Introduzca una categoria</string>
+    <string name="name_error"> Error invalid name, don´t use numbers</string>
+    <string name="surname_error"> Error invalid surname, don´t use numbers</string>
+    <string name="DNI_error"> Error invalid DNI</string>
+    <string name="valid"></string>
+    <string name="creador_por_eduardo">Creador por : Eduardo</string>
+    <string name="todo">TODO</string>
+    <string name="shark_gym">Shark Gym</string>
+    <string name="Delete"> Limpiar </string>
+    <string name="Eliminar">Delete</string>
+    <string name="Ayuda">Ayuda</string>
+    <string name="date_error">Error Date</string>
+
 
 </resources>

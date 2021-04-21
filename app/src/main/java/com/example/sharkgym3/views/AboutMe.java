@@ -2,6 +2,8 @@ package com.example.sharkgym3.views;
 
 import android.os.Bundle;
 
+import com.example.sharkgym3.Interfaces.AboutInterface;
+import com.example.sharkgym3.presenters.AboutPresenter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -12,12 +14,14 @@ import android.view.View;
 
 import com.example.sharkgym3.R;
 
-public class AboutMe extends AppCompatActivity {
+public class AboutMe extends AppCompatActivity implements AboutInterface.View {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_me);
+        AboutPresenter presenter = new AboutPresenter(this);
+
+                setContentView(R.layout.activity_about_me);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -30,5 +34,10 @@ public class AboutMe extends AppCompatActivity {
                 onBackPressed();
             }
         });
+    }
+
+    @Override
+    public void closeAboutActivity() {
+        finish();
     }
 }

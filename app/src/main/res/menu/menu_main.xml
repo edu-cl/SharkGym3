@@ -7,11 +7,17 @@
         android:icon="?android:attr/actionModeWebSearchDrawable"
         android:orderInCategory="100"
         android:title="@string/Buscador"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Ayuda"
+        android:orderInCategory="100"
+        android:title="@string/Ayuda"
         app:showAsAction="never" />
 
     <item

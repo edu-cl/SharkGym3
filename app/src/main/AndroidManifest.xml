@@ -6,14 +6,17 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SharkGym3">
-        <activity android:name=".views.SearchActivity"></activity>
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".views.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/Theme.SharkGym3.Search"></activity>
         <activity
             android:name=".views.AboutMe"
             android:label="@string/title_activity_about_me"
-            android:theme="@style/Theme.SharkGym3.NoActionBar" />
+            android:theme="@style/Theme.SharkGym3.about" />
         <activity android:name=".views.FormActivity" />
         <activity
             android:name=".views.SplartActivity"
@@ -27,7 +30,7 @@
         <activity
             android:name=".views.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.SharkGym3.NoActionBar">
+            android:theme="@style/Theme.SharkGym3.Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

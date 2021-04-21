@@ -8,5 +8,7 @@ public interface FormInterface {
     }
     public interface Presenter{
         void Start();
+        String getError(String error_code);
     }
+
 }

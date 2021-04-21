@@ -14,6 +14,40 @@
         <!-- Customize your theme here. -->
     </style>
 
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+            <item name="colorPrimary">@color/purple_500</item>
+            <item name="colorAccent">@color/black</item>
+    </style>
+    <style name="AppTheme.noActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+<style name="Theme.SharkGym3.Main" parent="AppTheme.noActionBar">
+    <item name="colorPrimary" >@color/purple_500 </item>
+    <item name="colorAccent">@color/black</item>
+    <item name="android:windowBackground">#D4DEE4</item>
+</style>
+
+    <style name="Theme.SharkGym3.Form" parent="AppTheme.noActionBar">
+        <item name="colorPrimary" >@color/purple_500 </item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowBackground">#D4DEE4</item>
+    </style>
+
+    <style name="Theme.SharkGym3.Search" parent="AppTheme.noActionBar">
+        <item name="colorPrimary" >@color/purple_500 </item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowBackground">#D4DEE4</item>
+    </style>
+
+    <style name="Theme.SharkGym3.about" parent="AppTheme.noActionBar">
+        <item name="colorPrimary" >@color/purple_500 </item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowBackground">#D4DEE4</item>
+    </style>
+
+
     <style name="Theme.SharkGym3.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -26,7 +60,7 @@
     <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">#00FF00</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:typeface">monospace</item>
     </style>
 
