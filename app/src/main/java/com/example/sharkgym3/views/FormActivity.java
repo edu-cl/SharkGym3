@@ -56,7 +56,12 @@ public class FormActivity extends AppCompatActivity implements FormInterface.Vie
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_form);
 
+        presenter = new FormPresenter(this);
+
+        myContext=this;
 
         DNI0EditText = findViewById(R.id.dniTE);
         DNILayout = findViewById(R.id.textInputLayout7);
@@ -71,12 +76,7 @@ public class FormActivity extends AppCompatActivity implements FormInterface.Vie
         Button Agregar = findViewById(R.id.Agregar);
         Button Eliminar = findViewById(R.id.delete);
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_form);
 
-        presenter = new FormPresenter(this);
-
-        myContext=this;
         person =new PersonEntity();
         NameditText.setOnFocusChangeListener((new View.OnFocusChangeListener() {
             @Override

@@ -59,7 +59,7 @@ public class PersonEntity {
 
     public boolean setName(String name) {
         boolean result=false;
-        if (name.matches("\\D")) {
+        if (name.matches("[^0-9]+")) {
             this.name = name;
             result=true;
         }
@@ -73,7 +73,7 @@ public class PersonEntity {
 
     public boolean setSurname(String surname) {
         boolean result=false;
-        if (name.matches("\\D")) {
+        if (surname.matches("[^0-9]+")) {
             this.surname = surname;
             result=true;
         }
@@ -88,7 +88,7 @@ public class PersonEntity {
 
     public boolean setDNI(String DNI) {
         boolean result=false;
-        if (DNI.matches("[0-9]{7,8}[A-Za-z]")) {
+        if (DNI.matches("[0-9]{8}[A-Za-z]")) {
             this.DNI = DNI;
             result=true;
         }
